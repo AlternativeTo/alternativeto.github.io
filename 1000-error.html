@@ -23,6 +23,13 @@
       .meta {
         font-size: 80%;
       }
+      .cf-error-details {
+        font-size: 80%;
+      }
+
+      .cf-error-details h1 {
+        font-size: 70%;
+      }
     </style>
   </head>
   <body>
@@ -31,7 +38,7 @@
         src="https://alternativeto.net/static/logo-meta-color.svg"
         alt="AlternativeTo"
       /> -->
-      <h3>Something went wrong...</h3>
+      ::CLOUDFLARE_ERROR_1000S_BOX::
       <p>
         It seems this request was blocked or some other error occured. If you
         think this is a mistake, please let us know on twitter
@@ -40,7 +47,7 @@
         your IP.
       </p>
 
-      <p class="meta">::CLOUDFLARE_ERROR_1000S_BOX::</p>
+      <p class="meta">Your ip: ::CLIENT_IP::, Error ID: ::RAY_ID::</p>
     </div>
   </body>
 </html>
