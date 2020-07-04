@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      .wrapper {
+        max-width: 500px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        margin: auto;
+        top: 50%;
+        padding-bottom: 40px;
+        text-align: center;
+        transform: translate3d(0, -50%, 0);
+      }
+      img {
+        width: 180px;
+        margin: 0 auto 4em;
+        display: block;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    ::[REPLACE WITH CUSTOM ERROR TOKEN NAME]::
+    <div className="wrapper">
+      <img
+        src="https://alternativeto.net/static/logo-meta-color.svg"
+        alt="AlternativeTo"
+      />
+      <Heading look="h3">We&apos;re sorry about this…</Heading>
+      <br /><br />
+      <p>
+        A technical problem occurred with the web site. The error has been
+        logged and we&apos;ll be looking into it right away. Thanks for your
+        patience.
+      </p>
+      <br /><br />
+      <p className="meta">
+        {statusCode ? `Technical details: An error ${statusCode} occurred on
+        server` : "Technical details: An error occurred on client"}
+      </p>
+    </div>
+  </body>
+</html>
